@@ -63,8 +63,8 @@ namespace gmath
 			return *this;
 		}
 
-		Vec<2> xy() { return Vec2{x, y}; }
-		Vec<2> uv() { return Vec2{u, v}; }
+		Vec<2> xy() const { return Vec2{x, y}; }
+		Vec<2> uv() const { return Vec2{u, v}; }
 	};
 	typedef base::Vec<3> Vec3;
 

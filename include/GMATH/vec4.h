@@ -62,9 +62,9 @@ namespace gmath
 			x /= val, y /= val, z /= val, w /= val;
 		}
 
-		Vec<3> xyz() { return Vec3{x, y, z}; } // TODO:
-		Vec<3> rgb() { return Vec3{r, g, b}; }
-		Vec<2> xy() { return Vec2{x, y}; }
+		Vec<3> xyz() const { return Vec3{x, y, z}; } // TODO:
+		Vec<3> rgb() const { return Vec3{r, g, b}; }
+		Vec<2> xy() const { return Vec2{x, y}; }
 	};
 	typedef base::Vec<4> Vec4;
 
