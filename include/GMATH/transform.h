@@ -12,9 +12,6 @@
 
 namespace gmath
 {
-	// returns a rotation quaternion about an axis N by A radians (untested (TODO: test))
-	inline Quat rotate(float a, const Vec3& n) { return {cosf(a*0.5f), n * sinf(a*0.5f)}; }
-
 	// returns full rotation matrix ABC
 	inline Mat4 rotate(float a, float b, float c)
 	{
@@ -119,5 +116,9 @@ namespace gmath
 				0.f,   0.f,   0.f,        1.f
 			};
 	}
+	
+	// returns a rotation quaternion about an axis N by A radians
+	inline Quat rotate(float a, const Vec3& n) { return {cosf(a*0.5f), n * sinf(a*0.5f)}; }
+
 } // namespace gmath
 #endif
