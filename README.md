@@ -1,6 +1,8 @@
 # GMath - Math Library for Graphics Programming
 For personal use in my 3D software rasterizer project, [SoftGL](https://github.com/arinaivanova/softgl).
 
+See [source code](https://github.com/arinaivanova/gmath/tree/master/include/GMATH)
+
 ### Features
 - [X] Vector and matrix **templates**
 - [X] **Vector operations**, including dot product, cross product, normalize, normal vector, etc.
