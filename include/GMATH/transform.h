@@ -51,9 +51,10 @@ namespace gmath
 			};
 	}
 	
-	// assumes FOV is in radians. returns orthogonal projection matrix (soon(tm)).
+	// assumes FOV is in radians. returns orthogonal projection matrix.
 	inline Mat4 ortho(float f, float n, float b, float t, float l, float r)
 	{
+		// todo:
 		return Mat4();
 	}
 
@@ -88,12 +89,12 @@ namespace gmath
 	// returns lookat matrix with given eye vector and angles a, b, c. equivalent to inverse of camera transform matrix.
 	inline Mat4 lookatEuler(const Vec3& eye, float a, float b, float c)
 	{
-		const float sinA = sinf(a),cosA = cosf(a);
-		const float sinB = sinf(b),cosB = cosf(b);
-		const float sinC = sinf(c),cosC = cosf(c);
+		const float sinA = sinf(a), cosA = cosf(a);
+		const float sinB = sinf(b), cosB = cosf(b);
+		const float sinC = sinf(c), cosC = cosf(c);
 		// columns of the full rotation matrix
-		const Vec3 s {cosC*cosB + sinC*sinA*sinB, sinC*cosA, -cosC*sinB + sinC*sinA*cosB};
-		const Vec3 u {-sinC*cosB + cosC*sinA*sinB, cosC*cosA, sinC*sinB+cosC*sinA*cosB};
+		const Vec3 s { cosC*cosB + sinC*sinA*sinB,  sinC*cosA, -cosC*sinB + sinC*sinA*cosB};
+		const Vec3 u {-sinC*cosB + cosC*sinA*sinB,  cosC*cosA,  sinC*sinB+cosC*sinA*cosB};
 		const Vec3 f {cosA*sinB, -sinA, cosA*cosB};
 		return
 			{
