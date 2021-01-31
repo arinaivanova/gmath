@@ -1,5 +1,5 @@
-# GMath - Math Library for Graphics Programming
-For personal use in my 3D software rasterizer project, [SoftGL](https://github.com/arinaivanova/softgl).
+# gmath: Math for graphics programming
+For [personal use](https://github.com/arinaivanova/softgl).
 
 See [source code](https://github.com/arinaivanova/gmath/tree/master/include/GMATH)
 
